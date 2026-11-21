@@ -1,0 +1,37 @@
+{
+  "name": "azt-obfuscator-azure",
+  "version": "1.0.0",
+  "description": "AZT Obfuscator Azure v1.0.0 — High-speed Luau script protection for Roblox",
+  "type": "module",
+  "main": "./dist/AZT_Index.mjs",
+  "types": "./src/AZT_Index.ts",
+  "bin": {
+    "azt-obf": "./dist/AZT_CLI.mjs"
+  },
+  "scripts": {
+    "build": "node scripts/AZT_Build.mjs",
+    "build:tsc": "tsc -p tsconfig.json",
+    "test": "node tests/AZT_TestSuite.mjs",
+    "obfuscate": "node dist/AZT_CLI.mjs"
+  },
+  "keywords": [
+    "luau",
+    "roblox",
+    "obfuscator",
+    "vm",
+    "bytecode",
+    "ast",
+    "rice-theorem",
+    "mba",
+    "super-instructions",
+    "azt-obfuscator"
+  ],
+  "author": "AZT Service <https://aztvn.top/discord>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
